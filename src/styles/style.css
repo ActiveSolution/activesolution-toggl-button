@@ -84,6 +84,10 @@ only screen and (min-resolution: 192dpi) {
   width: 220px;
 }
 
+#toggl-button-edit-form .toggl-button-input > option {
+  visibility: visible;
+}
+
 #toggl-button-edit-form .toggl-button-text {
   float:left;
   width: 186px;
@@ -537,4 +541,14 @@ only screen and (min-resolution: 192dpi) {
 
 #toggl-button-edit-form .toggl-button.toodledo {
   position: static;
+}
+
+/************* ACTIVEWORKFLOW **********/
+.toggl-button.activeworkflow {
+  text-decoration: none;
+  cursor: pointer;
+  color: #737373;
+  margin-right: 5px;
+  background-size: 15px !important;
+  background-position-y: 4px !important;
 }
