@@ -552,3 +552,27 @@ only screen and (min-resolution: 192dpi) {
   background-size: 15px !important;
   background-position-y: 4px !important;
 }
+
+
+/************* ACTIVEWORKFLOW **********/
+.toggl-button.visualstudio {
+  text-decoration: none;
+  cursor: pointer;
+  color: #737373;
+  margin-right: 5px;
+  background-size: 15px !important;
+  background-position-y: 5px !important;
+}
+
+.toggl-button.visualstudio-micro {
+  text-decoration: none;
+  cursor: pointer;
+  color: #737373;
+  background-size: 15px !important;
+  background-position-y: 3px !important;
+  float: left;
+}
+
+.onTileEditTextDiv {
+  width: auto !important;
+}

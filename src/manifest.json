@@ -51,7 +51,8 @@
     "*://*.trac.wordpress.org/*",
     "*://bugs.jquery.com/*",
     "*://*.wunderlist.com/*",
-    "*://*.activeworkflow.se/*"
+    "*://*.activeworkflow.se/*",
+    "*://*.visualstudio.com/*"
   ],
   "icons": {
     "16": "images/icon-16.png",
@@ -91,7 +92,8 @@
         "*://bugs.jquery.com/*",
         "*://*.wunderlist.com/*",
         "*://*.toodledo.com/*",
-        "*://*.activeworkflow.se/*"
+        "*://*.activeworkflow.se/*",
+        "*://*.visualstudio.com/*"
       ],
       "css": ["styles/style.css"],
       "js": ["scripts/common.js"]
@@ -220,6 +222,10 @@
     {
       "matches": ["*://*.activeworkflow.se/*"],
       "js": ["scripts/content/activeworkflow.js"]
+    },
+    {
+      "matches": ["*://*.visualstudio.com/*"],
+      "js": ["scripts/content/visualstudio.js"]
     }
   ]
 }
