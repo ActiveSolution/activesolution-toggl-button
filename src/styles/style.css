@@ -561,7 +561,7 @@ only screen and (min-resolution: 192dpi) {
   color: #737373;
   margin-right: 5px;
   background-size: 15px !important;
-  background-position-y: 5px !important;
+  background-position-y: 4px !important;
 }
 
 .toggl-button.visualstudio-micro {
