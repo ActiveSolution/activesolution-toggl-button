@@ -31,11 +31,9 @@ Add Toggl one-click time tracking to popular web tools.
   - [Toodledo][27]
   - [ActiveWorkflow][28]
 
-## Installing from packaged file
+##Installing from the Web Store
 
-1.  Download https://github.com/ActiveSolution/activesolution-toggl-button/blob/master/toggl-button-with-activeworkflow.crx
-2.  Navigate to `chrome://extensions/` and enable "Developer Mode".
-3.  Drag and drop the downloaded .crx file
+https://chrome.google.com/webstore/detail/toggl-button-for-active-s/agompenodiolehnopbidiagegjdlpgfn
 
 ## Installing from Source
 

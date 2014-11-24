@@ -5,7 +5,7 @@
 togglbutton.render('[id$=lblIssueHeading]:not(.toggl)', {observe: true}, function (elem) {
   var link,
       description = $('[id$=lblIssueHeading]').textContent,
-      project = $('[id$=companyTextBox]').value;
+      project = $("[id$=applicationDropDownList] option").text;
 
   link = togglbutton.createTimerLink({
     className: 'activeworkflow',
