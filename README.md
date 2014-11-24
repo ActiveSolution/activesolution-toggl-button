@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Toggl Button Chrome extension
 
 Add Toggl one-click time tracking to popular web tools.
@@ -90,3 +91,9 @@ Don't know how to start? Just check out the [user requested services][97] that h
 [97]: https://github.com/toggl/toggl-button/wiki/User-requested-buttons
 [98]: https://github.com/toggl/toggl-button/wiki/Adding-custom-domains
 [99]: https://github.com/toggl/toggl-button/pulls
+=======
+activesolution-toggl-button
+===========================
+
+Toggl Button
+>>>>>>> 96c462bd26797a83651987872721b24bd61ddaa3
