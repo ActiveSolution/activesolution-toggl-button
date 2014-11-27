@@ -20,7 +20,7 @@ var TogglButton = {
   $editForm: '<div id="toggl-button-edit-form">' +
       '<form>' +
       '<a class="toggl-button {service} active" href="#">Stop timer</a>' +
-      '<input type="button" value="x" id="toggl-button-hide">' +
+      '<a id="toggl-button-hide">x</a>' +
       '<div class="toggl-button-row">' +
         '<input name="toggl-button-description" type="text" id="toggl-button-description" class="toggl-button-input" value="">' +
       '</div>' +
@@ -184,7 +184,7 @@ var TogglButton = {
           tags: timeEntry.tags || null,
           billable: timeEntry.billable || false,
           duration: -(start.getTime() / 1000),
-          created_with: timeEntry.createdWith || 'TogglButton',
+          created_with: timeEntry.createdWith || ("TogglButton" + chrome.runtime.getManifest().version),
           duronly: !TogglButton.$user.store_start_and_stop_time
         }
       };

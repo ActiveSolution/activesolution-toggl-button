@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+#toggl-button-edit-form select option {
+  color: black!important;
+  background-color: white!important;
+}
+
 .toggl-button {
   display: inline-block !important;
   line-height: 20px;
@@ -118,6 +123,11 @@ only screen and (min-resolution: 192dpi) {
   cursor: pointer;
 }
 
+#toggl-button-edit-form #toggl-button-project-placeholder {
+  position: relative;
+  z-index: 2;
+}
+
 #toggl-button-edit-form #toggl-button-project-placeholder span,
 #toggl-button-edit-form #toggl-button-tag-placeholder span {
   float: right;
@@ -129,6 +139,12 @@ only screen and (min-resolution: 192dpi) {
 #toggl-button-edit-form #toggl-button-tag {
   visibility: hidden;
   position: absolute;
+}
+
+#toggl-button-edit-form #toggl-button-project {
+  visibility: visible!important;
+  z-index: 1;
+  max-width: 220px;
 }
 
 #toggl-button-description, #toggl-button-project, #toggl-button-tag {
