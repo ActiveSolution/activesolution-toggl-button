@@ -17,6 +17,7 @@ var TogglButton = {
   $idleInterval: 360000,
   $idleFromTo: "09:00-17:00",
   $lastSyncDate: null,
+  $version: ("TogglButton/" + chrome.runtime.getManifest().version),
   $editForm: '<div id="toggl-button-edit-form">' +
       '<form>' +
       '<a class="toggl-button {service} active" href="#">Stop timer</a>' +
@@ -58,6 +59,7 @@ var TogglButton = {
           });
           resp = JSON.parse(xhr.responseText);
           TogglButton.$curEntry = null;
+          TogglButton.setBrowserAction(null);
           if (resp.data.projects) {
             resp.data.projects.forEach(function (project) {
               projectMap[project.name] = project;
@@ -163,14 +165,13 @@ var TogglButton = {
     var entry = data.data;
     if (data.action === "INSERT") {
       TogglButton.$curEntry = entry;
-      TogglButton.setBrowserAction(entry);
     } else if (data.action === "UPDATE" && (TogglButton.$curEntry === null || entry.id === TogglButton.$curEntry.id)) {
       if (entry.duration >= 0) {
         entry = null;
       }
       TogglButton.$curEntry = entry;
-      TogglButton.setBrowserAction(entry);
     }
+    TogglButton.setBrowserAction(entry);
   },
 
   createTimeEntry: function (timeEntry, sendResponse) {
@@ -184,7 +185,7 @@ var TogglButton = {
           tags: timeEntry.tags || null,
           billable: timeEntry.billable || false,
           duration: -(start.getTime() / 1000),
-          created_with: timeEntry.createdWith || ("TogglButton" + chrome.runtime.getManifest().version),
+          created_with: timeEntry.createdWith || TogglButton.$version,
           duronly: !TogglButton.$user.store_start_and_stop_time
         }
       };
@@ -338,7 +339,7 @@ var TogglButton = {
   },
 
   logoutUser: function (sendResponse) {
-    TogglButton.ajax("/sessions?created_with=TogglButton", {
+    TogglButton.ajax("/sessions?created_with=" + TogglButton.$version, {
       method: 'DELETE',
       onLoad: function (xhr) {
         TogglButton.$user = null;
