@@ -604,3 +604,8 @@ only screen and (min-resolution: 192dpi) {
 .onTileEditTextDiv {
   width: auto !important;
 }
+
+/********* LERNIA HELPDESK *********/
+.toggl-button.lernia-helpdesk {
+    float: right    
+}

@@ -52,6 +52,7 @@
     "*://bugs.jquery.com/*",
     "*://*.wunderlist.com/*",
     "*://*.activeworkflow.se/*",
+    "*://arende.lernia.se/*"
     "*://*.visualstudio.com/*"
   ],
   "icons": {
@@ -93,6 +94,7 @@
         "*://*.wunderlist.com/*",
         "*://*.toodledo.com/*",
         "*://*.activeworkflow.se/*",
+        "*://arende.lernia.se/*"
         "*://*.visualstudio.com/*"
       ],
       "css": ["styles/style.css"],
@@ -226,6 +228,10 @@
     {
       "matches": ["*://*.visualstudio.com/*"],
       "js": ["scripts/content/visualstudio.js"]
+   },  
+   {
+      "matches": ["*://arende.lernia.se/*"],
+      "js": ["scripts/content/lernia-helpdesk.js"]
     }
   ]
 }
