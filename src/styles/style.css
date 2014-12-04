@@ -566,3 +566,8 @@ only screen and (min-resolution: 192dpi) {
 #toggl-button-edit-form .toggl-button.toodledo {
   position: static;
 }
+
+/********* LERNIA HELPDESK *********/
+.toggl-button.lernia-helpdesk {
+    float: right    
+}
